@@ -1,0 +1,68 @@
+
+
+*{
+    margin:0:
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+Img{
+    max-width: 100%;
+    }
+
+a {
+ text-decoration: none; 
+ color: inherit;
+}
+
+ul,
+ol,
+menu,
+li{
+list-style-type: none;
+}
+
+
+
+.body-flex{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: red;
+}
+
+.player{
+    flex-shrink: 0;
+    background-color: black;
+}
+
+
+/*********************/
+/******PRESET*********/
+/*********************/
+
+.spoty-main{
+    flex-grow: 1;
+}
+
+.spoty-nav-section{
+
+}
+
+
+.spoty_nav_contain{
+
+}
+
+.spoty_nav_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.spoty_nav_col{
+    height: 100vh;
+    background-color: yellowgreen;
+    align-self: flex-start;
+
+}
+
