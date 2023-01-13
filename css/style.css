@@ -23,6 +23,17 @@ list-style-type: none;
 }
 
 
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background-color: transparent;
+}
+
 
 .body-flex{
     display: flex;
@@ -31,28 +42,60 @@ list-style-type: none;
     background-color: red;
 }
 
-.player{
-    flex-shrink: 0;
-    background-color: black;
+
+/*********************/
+/*********************/
+/*********************/
+/****** UTILITY CLASS *********/
+/*********************/
+/*********************/
+/*********************/
+
+.row{
+    display: flex;
+}
+
+:root{
+   --main-color: white;
+}
+
+.tx-wh{
+    color: white;
+}
+.tx-2{
+    color: #a88f8f;
+}
+
+.col-50{
+    flex-basis: calc(100% / 2);
+}
+.col-100{
+    flex-basis: 100%;
+}
+
+ .icon_ply_lat_sx {
+    display: flex;
+    gap:10px 
 }
 
 
+
 /*********************/
-/******PRESET*********/
+/****** MAIN *********/
 /*********************/
 
 .spoty-main{
     flex-grow: 1;
 }
 
-.spoty-nav-section{
-
-}
 
 
-.spoty_nav_contain{
 
-}
+
+
+/*********************/
+/******SIDENAV*********/
+/*********************/
 
 .spoty_nav_row{
     display: flex;
@@ -64,5 +107,78 @@ list-style-type: none;
     background-color: yellowgreen;
     align-self: flex-start;
 
+}
+
+/*****************************/
+/******PLAYER - ASIDE*********/
+/*****************************/
+
+.player{
+    flex-shrink: 0;
+    background-color: #0E0E0E;
+
+}
+
+
+.row_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* parte sinistra ********/
+
+
+.col_player_lat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 237px;
+    gap: 10px;
+    padding: 11px;
+}
+
+.div-col{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumb_play{
+    max-width: 56px ;
+}
+
+.dinamic_text_play{
+    max-width: 90px ;
+    font-size: 10px;
+    line-height: 3px;
+}
+
+.icon_ply_lat_sx{
+    color: white;
+}
+
+
+/* parte centrale ********/
+
+.col_player_centr{
+   max-width: 544px;
+   display: flex;
+   align-items: baseline;
+}
+
+.icon_player_center{
+    margin: 0 10px;
+    font-size: 20px;
+    max-width: 215px;
+}
+
+.icon_player_play{
+font-size: 30px;
+padding: 0 10px;
+}
+
+.progress-player{
+    max-width: 560px;
 }
 
