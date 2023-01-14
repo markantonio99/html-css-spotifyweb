@@ -140,6 +140,7 @@ button {
 /******PLAYER - ASIDE*********/
 /*****************************/
 
+
 .player{
     flex-shrink: 0;
     background-color: #0E0E0E;
@@ -172,7 +173,7 @@ button {
 }
 
 .thumb_play{
-    max-width: 56px ;
+    min-width: 56px ;
 }
 
 .dinamic_text_play{
@@ -185,6 +186,67 @@ button {
     color: white;
 }
 
+
+/*****************************/
+/******PARTE RESPONSIVE********
+*********PLAYER - ASIDE********/
+/*****************************/
+
+@media only screen and  (max-width: 878px){
+
+    .col_player_lat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 145px;
+        gap: 10px;
+        padding: 11px;
+    }
+
+
+    .thumb_play{
+       min-width: 45px;
+    }
+}
+
+@media only screen and  (max-width: 639px){
+
+    .thumb_play{
+       min-width: 39px;
+    }
+
+
+    .icon_ply_lat_sx{
+        color: white;
+        font-size: 13px;
+        display: block;
+    }
+}
+
+
+@media only screen and  (max-width: 551px){
+
+    .thumb_play{
+       max-width: 28px;
+    }
+
+    .dinamic_text_play{
+        max-width: 90px ;
+        font-size: 8px;
+        line-height: 3px;
+    }
+    .col-50{
+        font-size: 12px;
+    }
+
+    .icon_ply_lat_sx{
+        color: white;
+        font-size: 13px;
+        display: block;
+    }
+}
+
+
 /* *********************************
 ************************************
 ************INIZIO PARTE centrale **
@@ -192,7 +254,6 @@ button {
 ************************************ */
 
 .col_player_centr{
-
     flex-basis: 577px;
 }
 
@@ -202,10 +263,8 @@ button {
     max-width: 544px;
     display: flex;
     justify-content: center;
-  
     margin-bottom: 10px;
 }
-
 
 
 .icon_player_center{
@@ -222,40 +281,118 @@ padding: 0 10px;
 
 
 
-/* *********************************
-************************************
-************PROVVISIORIIIIOOOOOO **
-************************************
-************************************ */
-
-
-
 .progress_player_centr{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     gap: 10px;
     padding-bottom: 10px;
 }
 
 .progress_player_1{
-    border-radius: 20px;
+  
     background-color: #5A5A5A;
-    padding: 2px;
-    width: 70%;
+    height: 5px;
+    width: 60%;
+    border-radius: 20px;
     position: relative;
     
 }
 .up_progress_player{
     border-radius: 20px;
     background-color: white;
-    padding: 9px;
-    width: 86px;
+    height: 5px;
+    width: 30%;
     position: absolute;
     left: 0px;
     top: 0px
+}
+
+/*****************************/
+/******PARTE RESPONSIVE********
+*********PLAYER - ASIDE********/
+/*****************************/
+
+
+@media only screen and  (max-width: 878px){
    
+  .icon_player_center{
+        margin: 0 10px;
+        font-size: 15px;
+        max-width: 215px;
+        flex-shrink: 0;
+    }
+
+    .flex_player_centr{
+        margin-bottom: 6px;
+        }
+
+  .icon_player_play{
+        font-size: 25px;
+        padding: 0 10px;
+        }
+
+}
+
+@media only screen and  (max-width: 639px){
+    .icon_player_center{
+        margin: 0 10px;
+        font-size: 14px;
+        max-width: 200px;
+        flex-shrink: 0;
+    }
+
+    .flex_player_centr{
+        margin-bottom: 0px;
+        }
+
+    .icon_player_play{
+        font-size: 25px;
+        padding: 0 10px;
+        }
    
+        .progress_player_1{
+  
+            height: 5px;
+            width: 60%;
+            
+        }
+   .up_progress_player{
+             
+            height: 5px;
+            width: 30%;
+        }
+
+}
+@media only screen and  (max-width: 551px){
+    .icon_player_center{
+        margin: 0 10px;
+        font-size: 10px;
+        max-width: 200px;
+        flex-shrink: 0;
+    }
+
+    .flex_player_centr{
+    margin-bottom: -2px;
+    }
+
+    .icon_player_play{
+        font-size: 20px;
+        padding: 0 5px;
+        }
    
+        .progress_player_1{
+  
+            height: 5px;
+            width: 60%;
+            
+        }
+   .up_progress_player{
+             
+            height: 5px;
+            width: 30%;
+        }
+
 }
 
 
@@ -266,7 +403,14 @@ padding: 0 10px;
 ************************************ */
 
 
-
+.col_player_lat_dx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 237px;
+    gap: 10px;
+    padding: 11px;
+}
 
 .btn_lat_1 {
     display: flex;
@@ -275,13 +419,11 @@ padding: 0 10px;
     flex-shrink: 0;
 }
 
-
 .btn_lat_2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 
 .progress_player_2{
@@ -300,3 +442,105 @@ padding: 0 10px;
     left: 0px;
     top: 0px
 }
+
+
+
+
+/*****************************/
+/******PARTE RESPONSIVE********
+*********PLAYER - ASIDE********/
+/*****************************/
+
+
+@media only screen and  (max-width: 878px){
+   
+    
+ 
+  }
+
+  @media only screen and  (max-width: 639px){
+    .col_player{
+        gap:0px;
+    }
+    .icon_player_center{
+        font-size: 13px ;
+    }
+    
+    .btn_lat_2 {
+        font-size: 13px ;
+    }
+    .progress_player_2{
+        padding: 2px;
+        width: 60px;
+      
+    }
+    .up_progress_player_2{
+        padding: 2px;
+        width: 15px;
+       
+    }
+    
+}
+
+
+
+@media only screen and  (max-width: 551px){
+    
+    .col_player_lat_dx{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 137px;
+        padding: 11px 3px;
+        gap: 0;
+    }
+    
+    .btn_lat_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    .col_player{
+        gap:0px;
+    }
+    .icon_player_center{
+        font-size: 10px;
+    }
+
+    .icon_player_center{
+        margin-left: 0px;
+
+    }
+    
+    .btn_lat_2 {
+        font-size: 13px ;
+    }
+    .icon_player_center{
+        margin-right: 4px;
+    }
+    .progress_player_2{
+        padding: 2px;
+        width: 60px;
+      
+    }
+    .up_progress_player_2{
+        padding: 2px;
+        width: 10px;
+       
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
