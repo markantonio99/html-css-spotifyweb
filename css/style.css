@@ -37,9 +37,9 @@ button {
 
 .body-flex{
     display: flex;
-    height: 100vh;
     flex-direction: column;
-    background-color: red;
+    overflow: hidden;
+    height: 100vh;
 }
 
 
@@ -57,6 +57,7 @@ button {
 
 :root{
    --main-color: white;
+   --spoty-nav: 230px;
 }
 
 .tx-wh{
@@ -64,6 +65,10 @@ button {
 }
 .tx-2{
     color: #a88f8f;
+}
+
+.tx-10{
+    font-size: 10px;
 }
 
 .col-50{
@@ -79,35 +84,57 @@ button {
 }
 
 
+/*********************/
+/****** CONTENT *********/
+/*********************/
+
+.spoty-content{
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: red;
+    display: flex;
+}
+
+
+/* *********************************
+************************************
+************BARRA LATERALE*********
+************************************
+************************************ */
+
+.spoty-nav{
+    background-color: green;
+    flex-basis: var(--spoty-nav);
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* .spoty_nav_row{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .spoty_nav_col{
+    height: 100vh;
+    background-color: yellowgreen;
+    align-self: flex-start;
+
+} */
+
+
 
 /*********************/
 /****** MAIN *********/
 /*********************/
 
-.spoty-main{
+.spoty-main{ 
+    background-color: yellow;
     flex-grow: 1;
+    padding:  20px;
 }
 
 
-
-
-
-
-/*********************/
-/******SIDENAV*********/
-/*********************/
-
-.spoty_nav_row{
-    display: flex;
-    flex-direction: column;
-}
-
-.spoty_nav_col{
-    height: 100vh;
-    background-color: yellowgreen;
-    align-self: flex-start;
-
-}
 
 /*****************************/
 /******PLAYER - ASIDE*********/
@@ -158,19 +185,34 @@ button {
     color: white;
 }
 
-
-/* parte centrale ********/
+/* *********************************
+************************************
+************INIZIO PARTE centrale **
+************************************
+************************************ */
 
 .col_player_centr{
-   max-width: 544px;
-   display: flex;
-   align-items: baseline;
+
+    flex-basis: 577px;
 }
+
+
+
+.flex_player_centr{
+    max-width: 544px;
+    display: flex;
+    justify-content: center;
+  
+    margin-bottom: 10px;
+}
+
+
 
 .icon_player_center{
     margin: 0 10px;
     font-size: 20px;
     max-width: 215px;
+    flex-shrink: 0;
 }
 
 .icon_player_play{
@@ -178,7 +220,83 @@ font-size: 30px;
 padding: 0 10px;
 }
 
-.progress-player{
-    max-width: 560px;
+
+
+/* *********************************
+************************************
+************PROVVISIORIIIIOOOOOO **
+************************************
+************************************ */
+
+
+
+.progress_player_centr{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
+.progress_player_1{
+    border-radius: 20px;
+    background-color: #5A5A5A;
+    padding: 2px;
+    width: 70%;
+    position: relative;
+    
+}
+.up_progress_player{
+    border-radius: 20px;
+    background-color: white;
+    padding: 9px;
+    width: 86px;
+    position: absolute;
+    left: 0px;
+    top: 0px
+   
+   
+   
+}
+
+
+/* *********************************
+************************************
+************FINE PARTE centrale **
+************************************
+************************************ */
+
+
+
+
+.btn_lat_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.btn_lat_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.progress_player_2{
+    border-radius: 10px;
+    background-color: #5A5A5A;
+    padding: 2px;
+    width: 80px;
+    position: relative;
+}
+.up_progress_player_2{
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+    width: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px
+}

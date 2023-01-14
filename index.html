@@ -8,28 +8,42 @@
     <script src="https://kit.fontawesome.com/154f1b3bac.js" crossorigin="anonymous"></script>
     <title>Spotify Web</title>
 </head>
+
+
+
+
 <body class="body-flex">
 
-    <main class="spoty-main">
+    <div class="spoty-content">
 
-    </main>
+        
+<!-- **************************************************************************************        
+*******************************BARRA LATERALE***************************************        
+**************************************************************************************        
+**************************************************************************************  -->
+
+       <sidenav class="spoty-nav">    
+       </sidenav>
+
+
+
+<!-- **************************************************************************************        
+*******************************CONTENUTO PRINCIPALE***************************************        
+**************************************************************************************        
+**************************************************************************************  -->
+
+       <main class="spoty-main">
+       </main>
     
-
-    <sidenav class="spoty-nav-section">
-        <div class="spoty_nav_contain">
-            <div class="spoty_nav_row">
-                <div class="spoty_nav_col">
-                    <p>ciao</p>
-
-                </div>
-               
-            </div>
-           
-        </div>
-    </sidenav>
+    </div>  <!-- spoty-content -->
 
 
 
+    
+<!-- **************************************************************************************        
+*******************************PLAYER ASIDE********************************************        
+****************************************************************************************        
+****************************************************************************************  -->
 
 
     <aside class="player">
@@ -37,7 +51,8 @@
             <div class="cont_player">
                 <div class="row_player">
 
-                   <div class="col_player_lat">
+
+                    <div class="col_player_lat">
 
                       <div class="col-50 div-col">
                           <div class="thumb_play">
@@ -63,18 +78,10 @@
 
                     </div>   <!-- col_player_lat -->
                   
-        
-                    
 
-
-
-
-
-
-
-
-                   <div class="col_player col_player_centr">
-
+                    <div class="col_player_centr">
+                          
+                         <div class="flex_player_centr">
                        <div class="icon_player_center">
                           <button class="tx-wh icon_player_center" type="button">
                             <i class="fa-solid fa-shuffle"></i>
@@ -92,39 +99,77 @@
                             <i class="fa-solid fa-rotate-right"></i>
                           </button>
                        </div>  <!-- icon_player_center--> 
-
-                      <div class="progress-player">
-
-                      </div>
-
-                   </div>  <!-- col_player_centr -->
+                         </div> <!-- flex_player_centr-->
 
 
+                         <div class="progress_player_centr">
+                            <div class="time_start">
+                            <span class="tx-wh tx-10">0:25</span>
+                            </div>
+                            <div class="progress_player_1">
+                                <div>
+                                    <div class="up_progress_player">
+                                    </div>
+                                  </div>
+                            </div>      
+                                  
+                            <div class="time_end">
+                                <span class="tx-wh tx-10">4:35</span>
+                            </div>
+                         </div>   <!-- progress_player_centr -->
+
+                    </div>  <!-- col_player_centr -->
 
 
 
 
+    
+<!-- **************************************************************************************        
+*******************************PROVVISORIO********************************************        
+****************************************************************************************        
+****************************************************************************************  -->
 
 
 
+                <div class="col_player col_player_lat">
+                             
+                      <div class="btn_lat_1">
+                           <button class="tx-wh icon_player_center" type="button">
+                             <i class="fa-solid fa-list"></i>
+                           </button>
+                           <button class="tx-wh icon_player_center" type="button">
+                            <i class="fa-solid fa-desktop"></i>
+                          </button>
+                     </div>
+                     <div class="btn_lat_2" >
+                          <button class="tx-wh icon_player_center" type="button">
+                                <i class="fa-solid fa-volume-high"></i>
+                          </button>  
+                          <div class="progress_player_2">
+                                <div>
+                                     <div class="up_progress_player_2">
+                                </div>
+                         </div>         
+                     </div>
 
-
-
-                   <div class="col_player col_player_lat">
-                    
-                   </div>
-
+                </div>   <!--col_player col_player_lat -->
 
 
 
 
                 </div>   <!--row_player -->
             </div> <!--cont_player -->
-        </div>     <!--section-player -->
-       
-       
-        
+        </div>     <!--section-player -->     
 
     </aside> 
+
+
+
+
+
+
+
 </body>
+
+
 </html>
