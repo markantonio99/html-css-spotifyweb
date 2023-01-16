@@ -107,12 +107,13 @@ button {
     flex-basis: var(--spoty-nav);
     flex-shrink: 0;
     overflow: hidden;
+    display: flex;
 }
 
 .nav_content{
  display: flex;
  flex-direction: column;
- align-items: start;
+
 }
 
 .nav_items{
@@ -139,7 +140,6 @@ button {
 
 .icon_nav_list{
     min-width: 35px;
-    border-left: 3px solid #AEF72D;
     padding-left: 10px;
 }
 
@@ -148,20 +148,9 @@ button {
     padding-left: 10px;
 }
 
-
-
 .home{
-    /* border-left: 5px solid #AEF72D; */
+    border-left: 3px solid #AEF72D;
 }
-.cerca{
-
-}
-
-.libreria{
-    
-}
-
-
 
 .playlist_text{
     text-transform: uppercase;
@@ -198,24 +187,44 @@ button {
     padding-left: 10px;
  }
 
+.install-app{
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    margin-top: auto;
+}
+
+ .icon-app{
+    color: white;
+    font-size: 20px;
+} 
+
+.user-nav{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    gap: 10px
+}
+
+.user_svg{
+    width: 30px;
+    color: white;
+    object-fit: cover;
+    object-position:center;
+    background-color: #808080;
+    padding: 4px 7px;
+    border-radius: 999px;
+}
 
 /* *********************************
 ************************************
 ************RESPONSIVE*********
 ************************************
 ************************************ */
-
-@media only screen and  (max-width: 878px){
-   
-    
- 
-}
-
-@media only screen and  (max-width: 639px){
- 
-  
-}
-
 
 
 @media only screen and  (max-width: 551px){
@@ -229,10 +238,32 @@ button {
     .img_2{
         visibility: visible;
         max-width: 30px;
-        margin-left: -30px;
+        margin: 0 7px;
     }
-}
 
+    .icon_nav_list{
+        border: 0px;
+    }
+
+   .title_nav_menu{
+    visibility: hidden;
+   }
+
+   .main-playlist{
+    visibility: hidden;
+   }
+
+   .install-app{
+    border: 0px;
+    padding-bottom: 0px;
+    margin-left: 15px;
+   }
+
+   .icon-app{
+    font-size: 30px;
+} 
+
+}
 
 
 /*********************/
@@ -242,8 +273,84 @@ button {
 .spoty-main{ 
     background-color: #141922;
     flex-grow: 1;
-    padding:  20px;
 }
+
+.header{
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    background-color: black;
+    min-height: 70px; 
+    padding: 20px;
+}
+
+.btn-upgrade{
+   font-size: 15px;
+   border: 2px solid white;
+   border-radius: 50px;
+   padding: 15px 25px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.nav_link{
+    color: #7D7F84;
+    font-size: 15px;
+    padding: 0 10px;
+}
+.visited_link{
+    display: block;
+    color: yellow;
+    font-size: 70px;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.title-played{
+    font-size: 33px;
+    padding-bottom: 35px;
+    padding-left: 10px;
+}
+
+.played-one{
+
+}
+
+.row-played-one{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    padding: 0 10px;
+}
+
+.items-played-one{
+    flex-basis: 180px;
+}
+
+
+.title_song, .sub_title_song{
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.title_song{
+  font-size: 15px;
+}
+.sub_title_song{
+    font-size: 10px;
+  }
+
+
+
+
+
+
 
 
 
