@@ -346,11 +346,27 @@ button {
     font-size: 10px;
   }
 
+.list-user-track{
+    padding-top: 40px;
+}
 
+.title_list_user{
+    font-size: 33px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
 
+.description_list_user{
+    color: #7B7D82;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
 
-
-
+.tumb_popular{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
 
 
 
