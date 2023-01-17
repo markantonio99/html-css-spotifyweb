@@ -133,9 +133,10 @@ button {
 .nav_menu{
     display: flex;
     align-items: center;
-    /* gap: 7px; */
     padding: 5px 0;
 }
+
+
 
 
 .icon_nav_list{
@@ -144,9 +145,21 @@ button {
 }
 
 .title_nav_menu{
-    color: white;
     padding-left: 10px;
 }
+.title_nav_menu:hover{
+    color: white;
+}
+
+.title_nav_menu{
+    color: #6E6E6E;
+}
+
+
+.activity{
+    color: white;
+}
+
 
 .home{
     border-left: 3px solid #AEF72D;
@@ -161,15 +174,16 @@ button {
     padding-bottom: 10px;
 }
 
+
 .add_playlist_nav{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+
 .icon_add_playlist{
     background-color: #A3A3A3 ;
-    /* padding: 10px; */
     width: 35px;
     height:35px;
     text-align: center;
@@ -177,15 +191,22 @@ button {
     margin-left: 10px;
 }
 
+.icon_add_playlist:hover{
+    background-color: white;
+}
+
+
 .text_add_playlist{
     color: #a8a2a2;
 }
+
 
 .txt_li{
     color: #717171;
     padding: 5px 0px;
     padding-left: 10px;
  }
+
 
 .install-app{
     border-bottom: 1px solid white;
@@ -201,6 +222,10 @@ button {
     color: white;
     font-size: 20px;
 } 
+
+.activity_nav:hover{
+    color: white;
+ }
 
 .user-nav{
     display: flex;
@@ -291,6 +316,11 @@ button {
    padding: 15px 25px;
 }
 
+.btn-upgrade:hover{
+    font-size: 17px;
+}
+
+
 .nav{
     display: flex;
     justify-content: center;
@@ -303,6 +333,11 @@ button {
     font-size: 15px;
     padding: 0 10px;
 }
+.nav_link:hover{
+    color: white;
+}
+
+
 .visited_link{
     display: block;
     color: yellow;
@@ -330,8 +365,24 @@ button {
 
 .items-played-one{
     flex-basis: 180px;
+    position: relative;
+}
+.items-played-one:hover  .tumb_played{
+    opacity: 0.4;
 }
 
+.hover-play{
+    font-size: 50px;
+    color: transparent;
+    position: absolute;
+    left: 70px;
+    bottom: 155px; 
+}
+
+.items-played-one:hover 
+.hover-play{
+    color: white;
+}
 
 .title_song, .sub_title_song{
     color: white;
@@ -345,6 +396,33 @@ button {
 .sub_title_song{
     font-size: 10px;
   }
+
+
+  .items-played-one_user{
+    flex-basis: 180px;
+    position: relative;
+}
+
+.items-played-one_user:hover  .tumb_played_user{
+    opacity: 0.4;
+}
+
+.tumb_played_user{
+   
+}
+
+.hover-play-user{
+    font-size: 50px;
+    color: transparent;
+    position: absolute;
+    left: 70px;
+    bottom: 100px; 
+}
+
+.items-played-one_user:hover 
+.hover-play-user{
+    color: white;
+}
 
 .list-user-track{
     padding-top: 40px;
@@ -416,7 +494,13 @@ button {
     line-height: 3px;
 }
 
-.icon_ply_lat_sx{
+.dinamic_text_play:hover{
+   text-decoration: underline;
+}
+
+
+
+.tx-hv:hover{
     color: white;
 }
 
@@ -540,6 +624,20 @@ padding: 0 10px;
     position: absolute;
     left: 0px;
     top: 0px
+}
+
+.circle_hover{
+    font-size: 12px;   
+    color:white;
+    position: absolute;
+    left: 90%;
+    bottom: -5px;
+    visibility: hidden;
+}
+
+.circle_hover:hover{
+    visibility: visible !important;
+    display: block;
 }
 
 /*****************************/

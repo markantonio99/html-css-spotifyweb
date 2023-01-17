@@ -43,7 +43,7 @@
                             <img class="icon_nav_list home" src="./img/home.svg" alt="icona home">
                         </figure>
                         <div>
-                            <a class="title_nav_menu" href="#">Home</a>
+                            <a class="title_nav_menu activity" href="#">Home</a>
                         </div>
                     </li>
                     <li class="nav_menu">
@@ -75,30 +75,30 @@
                     <div class="icon_add_playlist">
                         <i class="fa-solid fa-plus"></i>
                     </div>
-                    <div class="text_add_playlist">
+                    <div class="text_add_playlist activity_nav">
                     <P>Crea playlist</P>
                     </div>
                </div>
                    <ul>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
-                    <li class="txt_li"> 
+                    <li class="txt_li activity_nav"> 
                         Nome Playlist
                     </li>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
-                    <li class="txt_li">
+                    <li class="txt_li activity_nav">
                         Nome Playlist
                     </li>
                    </ul>
@@ -108,7 +108,7 @@
                    <div class="icon-app">
                     <i class="fa-regular fa-circle-down"></i>
                    </div>
-                   <h4 class="tx-wh">installa app</h4>
+                   <h4 class="tx-2 activity_nav">installa app</h4>
             </div>
 
             <div class="nav_items user-nav">
@@ -166,9 +166,10 @@
                 <h2 class="title-played tx-wh">Recently played</h2>
                 <div class="row-played-one">
                       <div class="items-played-one"">
-                           <figure class="tumb_played">
-                              <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
-                           </figure>
+                        <figure class="tumb_played">
+                            <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                            <i class="fa-regular fa-circle-play hover-play"></i>
+                         </figure>
                            <h3 class="title_song">
                                Heavy Metal
                            </h3>
@@ -179,6 +180,7 @@
                       <div class="items-played-one"">
                         <figure class="tumb_played">
                            <img src="./img/stranger.jpeg" alt="Stranger Things">
+                           <i class="fa-regular fa-circle-play hover-play"></i>
                         </figure>
                         <h3 class="title_song">
                             Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
@@ -190,6 +192,7 @@
                       <div class="items-played-one"">
                         <figure class="tumb_played">
                             <img src="./img/aquietplace.jpeg" alt="Stranger Things">
+                            <i class="fa-regular fa-circle-play hover-play"></i>
                          </figure>
                          <h3 class="title_song">
                              A queit place
@@ -201,6 +204,8 @@
                       <div class="items-played-one"">
                         <figure class="tumb_played">
                             <img src="./img/split.jpeg" alt="Split">
+                            <i class="fa-regular fa-circle-play hover-play"></i>
+
                          </figure>
                          <h3 class="title_song">
                             Split
@@ -212,6 +217,7 @@
                       <div class="items-played-one"">
                         <figure class="tumb_played">
                             <img src="./img/cure.jpeg" alt="Split">
+                            <i class="fa-regular fa-circle-play hover-play"></i>
                          </figure>
                          <h3 class="title_song">
                             A cure for wellness
@@ -223,6 +229,7 @@
                       <div class="items-played-one"">
                         <figure class="tumb_played">
                             <img src="./img/sinister.jpeg" alt="Split">
+                            <i class="fa-regular fa-circle-play hover-play"></i>
                          </figure>
                          <h3 class="title_song">
                            Sinister
@@ -238,17 +245,19 @@
             <h2 class="title_list_user tx-wh">Creato per John Doe</h2>
             <p class="description_list_user">Più ascolti, più accurati saranno i suggerimenti</p>
             <div class="row-played-one">
-                  <div class="items-played-one"">
-                       <figure class="tumb_played">
+                  <div class="items-played-one_user"">
+                       <figure class="tumb_played_user">
                           <img src="./img/radar.jpeg" alt="Realese Radar">
+                          <i class="fa-regular fa-circle-play hover-play-user"></i>
                        </figure>
                        <h3 class="title_song">
                             Realese Radar
                        </h3>
                   </div>
-                  <div class="items-played-one"">
-                    <figure class="tumb_played">
+                  <div class="items-played-one_user"">
+                    <figure class="tumb_played_user">
                        <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+                       <i class="fa-regular fa-circle-play hover-play-user"></i>
                     </figure>
                     <h3 class="title_song">
                         Daily Mix 1
@@ -278,32 +287,6 @@
        </main>
     
     </div>  <!-- spoty-content -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
 <!-- **************************************************************************************        
@@ -335,10 +318,10 @@
 
                       <div class="icon_ply_lat_sx">
                          <div class="col-50">
-                            <spoan><i class="fa-regular fa-heart"></i></spoan>
+                            <span><i class="fa-regular fa-heart tx-2 tx-hv"></i></span>
                          </div>
                          <div class="col-50">
-                            <span> <i class="fa-regular fa-folder"></i></span>
+                            <span> <i class="fa-regular fa-folder tx-2 tx-hv"></i></span>
                          </div>
                       </div>
 
@@ -375,6 +358,10 @@
                             <div class="progress_player_1">
                                 <div>
                                     <div class="up_progress_player">
+                                        <div class="circle_hover">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
+                                        
                                     </div>
                                   </div>
                             </div>      
