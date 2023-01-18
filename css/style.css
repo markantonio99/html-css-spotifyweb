@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -113,7 +112,6 @@ button {
 .nav_content{
  display: flex;
  flex-direction: column;
-
 }
 
 .nav_items{
@@ -298,15 +296,25 @@ button {
 .spoty-main{ 
     background-color: #141922;
     flex-grow: 1;
+    overflow-y: scroll;
 }
 
-.header{
+.header_1{
     display: flex;
-    justify-content: end;
-    align-items: center; 
+    flex-direction: column;
+    flex-grow: 1;
+} 
+
+.header{
+    text-align: end;
     background-color: black;
     min-height: 70px; 
-    padding: 20px;
+    padding: 30px;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    width: 80%;
+   
 }
 
 .btn-upgrade{
